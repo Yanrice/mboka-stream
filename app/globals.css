@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Outfit:wght@300;400;500;600&display=swap');
+
+:root {
+  /* Official flag colors */
+  --red:   #EF3340; /* Both flags — blood of martyrs */
+  --gold:  #FFD100; /* Both flags — wealth & nobility */
+  --blue:  #007FFF; /* DRC flag — peace */
+  --green: #009543; /* Congo-Brazza — forests */
+
+  /* Backgrounds */
+  --bg:    #08090a;
+  --bg2:   #0e1012;
+  --bg3:   #141618;
+
+  /* Text */
+  --text:  #f5f2ec;
+  --muted: rgba(245,242,236,0.5);
+  --faint: rgba(245,242,236,0.22);
+
+  /* Borders */
+  --bord:  rgba(245,242,236,0.07);
+  --bord-blue: rgba(0,127,255,0.35);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Kente stripe using all 4 flag colors */
+.kente-band {
+  height: 5px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--red)   0px,  var(--red)   18px,
+    var(--gold)  18px, var(--gold)  36px,
+    var(--blue)  36px, var(--blue)  54px,
+    var(--green) 54px, var(--green) 72px,
+    var(--bg)    72px, var(--bg)    88px
+  );
+}
+
+.kente-divider {
+  height: 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--red)   0px,  var(--red)   16px,
+    var(--gold)  16px, var(--gold)  32px,
+    var(--blue)  32px, var(--blue)  48px,
+    var(--green) 48px, var(--green) 64px,
+    var(--bg)    64px, var(--bg)    80px
+  );
+}

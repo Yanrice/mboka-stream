@@ -1,0 +1,20 @@
+.section { background: var(--bg2); padding: 2.5rem 1.75rem; }
+.inner { max-width: 1280px; margin: 0 auto; }
+.eyebrow { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--green); font-weight: 600; margin-bottom: .5rem; }
+.title { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800; color: var(--text); margin-bottom: 2rem; }
+.plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
+.plan { border-radius: 6px; padding: 1.5rem 1.25rem; border: 1.5px solid var(--bord); background: var(--bg3); position: relative; transition: border-color .2s; }
+.plan:hover { border-color: rgba(245,242,236,.18); }
+.hot { border-color: var(--red) !important; background: #100608; }
+.badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--red); color: #fff; font-size: 9px; font-weight: 700; padding: 3px 14px; border-radius: 20px; white-space: nowrap; letter-spacing: 1px; text-transform: uppercase; }
+.tier { font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-bottom: .6rem; }
+.price { font-family: 'Syne', sans-serif; font-size: 34px; font-weight: 800; color: var(--text); line-height: 1; }
+.cents { font-size: 18px; }
+.mo { font-size: 12px; color: var(--faint); margin-bottom: 1.25rem; }
+.perks { list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 12px; color: var(--muted); margin-bottom: 1.25rem; }
+.perk::before { content: '✓ '; color: var(--green); font-weight: 700; }
+.btn { width: 100%; padding: 10px; border-radius: 3px; font-size: 13px; font-weight: 600; font-family: 'Outfit', sans-serif; cursor: pointer; background: transparent; color: var(--muted); border: 1px solid var(--bord); transition: all .2s; }
+.btn:hover { background: rgba(245,242,236,.05); color: var(--text); }
+.hot .btn { background: var(--red); color: #fff; border: none; }
+.hot .btn:hover { opacity: .88; }
+.note { font-size: 12px; color: var(--faint); text-align: center; }
