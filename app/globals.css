@@ -5,46 +5,35 @@
   --gold:  #FFD100;
   --blue:  #007FFF;
   --green: #009543;
-  --bg:    #08090a;
-  --bg2:   #0e1012;
-  --bg3:   #141618;
-  --text:  #f5f2ec;
-  --muted: rgba(245,242,236,0.5);
-  --faint: rgba(245,242,236,0.22);
-  --bord:  rgba(245,242,236,0.07);
-  --bord-blue: rgba(0,127,255,0.35);
-  --max-w: 960px;
+  --bg:    #0a0a0f;
+  --bg2:   #111118;
+  --bg3:   #18181f;
+  --bg4:   #1e1e28;
+  --text:  #f0eee8;
+  --muted: rgba(240,238,232,0.5);
+  --faint: rgba(240,238,232,0.2);
+  --bord:  rgba(240,238,232,0.07);
+  --sidebar-w: 72px;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html, body { height: 100%; scroll-behavior: smooth; }
 body {
   background: var(--bg);
   color: var(--text);
   font-family: 'Outfit', sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
-.kente-band {
-  height: 5px;
+.kente {
+  height: 3px;
   background: repeating-linear-gradient(
     90deg,
-    var(--red)   0px,  var(--red)   18px,
-    var(--gold)  18px, var(--gold)  36px,
-    var(--blue)  36px, var(--blue)  54px,
-    var(--green) 54px, var(--green) 72px,
-    var(--bg)    72px, var(--bg)    88px
-  );
-}
-
-.kente-divider {
-  height: 6px;
-  background: repeating-linear-gradient(
-    90deg,
-    var(--red)   0px,  var(--red)   16px,
-    var(--gold)  16px, var(--gold)  32px,
-    var(--blue)  32px, var(--blue)  48px,
-    var(--green) 48px, var(--green) 64px,
-    var(--bg)    64px, var(--bg)    80px
+    var(--red)   0px,  var(--red)   14px,
+    var(--gold)  14px, var(--gold)  28px,
+    var(--blue)  28px, var(--blue)  42px,
+    var(--green) 42px, var(--green) 56px,
+    var(--bg)    56px, var(--bg)    70px
   );
 }

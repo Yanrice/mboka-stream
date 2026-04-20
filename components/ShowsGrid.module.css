@@ -1,0 +1,75 @@
+.section { padding: 2rem 2rem; }
+
+.header {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-bottom: 1.25rem;
+}
+
+.title { font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700; color: var(--text); }
+.accent { color: var(--red); }
+.link { font-size: 12px; color: var(--gold); cursor: pointer; font-weight: 500; }
+.link:hover { opacity: 0.7; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.card {
+  border-radius: 8px; overflow: hidden; cursor: pointer;
+  transition: transform .25s, box-shadow .25s;
+  aspect-ratio: 2/3; position: relative;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  border: 1px solid rgba(240,238,232,0.05);
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  border-color: rgba(240,238,232,0.15);
+}
+
+.overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(10,10,15,0.97) 0%, rgba(10,10,15,0.3) 50%, transparent 100%);
+}
+
+.tag {
+  position: absolute; top: 10px; left: 10px; z-index: 2;
+  font-size: 8px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  padding: 3px 8px; border-radius: 4px; color: #fff;
+}
+.tagRed   { background: var(--red); }
+.tagGold  { background: var(--gold); color: #0a0a0f; }
+.tagGreen { background: var(--green); }
+.tagBlue  { background: var(--blue); }
+
+.cardBody { position: relative; z-index: 1; padding: 0 10px 12px; }
+
+.meta {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 4px;
+}
+
+.year { font-size: 10px; color: var(--muted); }
+
+.ratingBadge {
+  font-size: 10px; font-weight: 600; color: var(--gold);
+  display: flex; align-items: center; gap: 2px;
+}
+
+.cardTitle {
+  font-family: 'Syne', sans-serif; font-size: 12px; font-weight: 700;
+  color: var(--text); line-height: 1.25; margin-bottom: 2px;
+}
+
+.cardSub { font-size: 9px; color: rgba(240,238,232,0.35); }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 680px) {
+  .section { padding: 1.5rem; }
+  .grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+}

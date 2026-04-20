@@ -1,0 +1,100 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1.5rem;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--bord);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.left { display: none; }
+
+.mobileLogo {
+  font-family: 'Syne', sans-serif;
+  font-size: 18px; font-weight: 800; color: var(--text);
+}
+.mobileLogo span { color: var(--red); }
+
+.search {
+  flex: 1;
+  max-width: 480px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  font-size: 18px;
+  color: var(--muted);
+  pointer-events: none;
+  line-height: 1;
+}
+
+.input {
+  width: 100%;
+  background: var(--bg3);
+  border: 1px solid var(--bord);
+  border-radius: 24px;
+  padding: 9px 16px 9px 38px;
+  font-size: 13px;
+  font-family: 'Outfit', sans-serif;
+  color: var(--text);
+  outline: none;
+  transition: border-color .2s;
+}
+
+.input::placeholder { color: var(--muted); }
+.input:focus { border-color: rgba(0,127,255,0.4); }
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.iconBtn {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: var(--bg3);
+  border: 1px solid var(--bord);
+  color: var(--muted);
+  font-size: 16px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all .2s;
+}
+.iconBtn:hover { color: var(--text); border-color: rgba(240,238,232,0.2); }
+
+.avatar {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--blue), var(--green));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700; color: #fff;
+  cursor: pointer;
+  border: 2px solid var(--blue);
+}
+
+.cta {
+  background: var(--blue);
+  color: #fff; border: none;
+  padding: 8px 18px; border-radius: 20px;
+  font-size: 13px; font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  cursor: pointer;
+  transition: opacity .2s;
+  white-space: nowrap;
+}
+.cta:hover { opacity: .85; }
+
+@media (max-width: 680px) {
+  .left { display: block; }
+  .search { max-width: none; }
+  .cta { display: none; }
+}
