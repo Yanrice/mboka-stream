@@ -1,25 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Outfit:wght@300;400;500;600&display=swap');
 
 :root {
-  /* Official flag colors */
-  --red:   #EF3340; /* Both flags — blood of martyrs */
-  --gold:  #FFD100; /* Both flags — wealth & nobility */
-  --blue:  #007FFF; /* DRC flag — peace */
-  --green: #009543; /* Congo-Brazza — forests */
-
-  /* Backgrounds */
+  --red:   #EF3340;
+  --gold:  #FFD100;
+  --blue:  #007FFF;
+  --green: #009543;
   --bg:    #08090a;
   --bg2:   #0e1012;
   --bg3:   #141618;
-
-  /* Text */
   --text:  #f5f2ec;
   --muted: rgba(245,242,236,0.5);
   --faint: rgba(245,242,236,0.22);
-
-  /* Borders */
   --bord:  rgba(245,242,236,0.07);
   --bord-blue: rgba(0,127,255,0.35);
+  --max-w: 960px;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -31,7 +25,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Kente stripe using all 4 flag colors */
 .kente-band {
   height: 5px;
   background: repeating-linear-gradient(
